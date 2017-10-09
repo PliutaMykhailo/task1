@@ -1,4 +1,4 @@
-import com.task.SayHellow;
+package com.plyuta.task1;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
