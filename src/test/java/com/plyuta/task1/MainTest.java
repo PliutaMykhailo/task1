@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.plyuta.task1;
 
 import org.junit.After;
@@ -12,8 +8,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * @version 1.0.0.0
  * @author Pliuta Mykhailo, mykhailo.pliuta@gmail.com, plyuta.misha@gmail.com
+ * @version 1.0.0.0
  */
 public class MainTest {
 

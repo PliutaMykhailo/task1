@@ -3,12 +3,12 @@ package com.plyuta.task1;
 import java.io.IOException;
 
 /**
- * @version 1.0.0.0
  * @author Pliuta Mykhailo, mykhailo.pliuta@gmail.com, plyuta.misha@gmail.com
+ * @version 1.0.0.0
  */
 public class Main {
 
-     public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         SayHellow sayHellow;
         if (args.length == 0) {

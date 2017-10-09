@@ -3,8 +3,8 @@ package com.plyuta.task1;
 import java.util.*;
 
 /**
- * @version 1.0.0.0
  * @author Pliuta Mykhailo, mykhailo.pliuta@gmail.com, plyuta.misha@gmail.com
+ * @version 1.0.0.0
  */
 public class SayHellow {
     public Date dataNewZone = new Date();
@@ -13,12 +13,12 @@ public class SayHellow {
 
     public SayHellow(String city) {
         this.city = city;
-        tZone=getZone(city);
+        tZone = getZone(city);
         TimeZone.setDefault(TimeZone.getTimeZone(this.tZone));
     }
 
-    public SayHellow(String city, String tZone){
-        this.city=city;
+    public SayHellow(String city, String tZone) {
+        this.city = city;
         this.tZone = tZone;
         TimeZone.setDefault(TimeZone.getTimeZone(this.tZone));
     }
@@ -35,20 +35,20 @@ public class SayHellow {
         return result;
     }
 
-    public void printHello()  {
+    public void printHello() {
         String greeting = "";
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(dataNewZone);
         int temp = calendar.get(Calendar.HOUR_OF_DAY);
 
         ResourceBundle mybundle = ResourceBundle.getBundle("Locales_");
-        if (temp >=19& temp<23) {
+        if (temp >= 19 & temp < 23) {
             greeting = mybundle.getString("evening");
 
-        } else if (temp >=6& temp<9) {
+        } else if (temp >= 6 & temp < 9) {
             greeting = mybundle.getString("morning");
 
-        } else if (temp >=9& temp<19) {
+        } else if (temp >= 9 & temp < 19) {
             greeting = mybundle.getString("afternoon");
 
 

@@ -13,8 +13,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * @version 1.0.0.0
  * @author Pliuta Mykhailo, mykhailo.pliuta@gmail.com, plyuta.misha@gmail.com
+ * @version 1.0.0.0
  */
 public class SayHellowTest {
 
