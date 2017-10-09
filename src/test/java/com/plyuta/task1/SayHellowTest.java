@@ -48,7 +48,7 @@ public class SayHellowTest {
     public void testGetZone() {
         System.out.println("getZone");
         String city = "Isle of Man";
-        SayHellow instance = new SayHellow();
+        SayHellow instance = new SayHellow(city);
         String expResult = "Europe/Isle_of_Man";
         String result = instance.getZone(city);
         Assert.assertEquals(expResult, result);
@@ -58,11 +58,13 @@ public class SayHellowTest {
      * Test of printHello method, of class SayHellow.
      */
     @Test
-    public void testPrintHello() {
-        System.out.println("printHello");
-        String city = "";
-        String tZone = "";
-        SayHellow instance = new SayHellow();
-        instance.printHello(city, tZone);
+    public void testGetZonenoCity() {
+        System.out.println("getZone");
+        String city = "sdafsadfasf";
+        SayHellow instance = new SayHellow(city);
+        String expResult = "GMT";
+        String result = instance.getZone(city);
+        Assert.assertEquals(expResult, result);
     }
+
 }
